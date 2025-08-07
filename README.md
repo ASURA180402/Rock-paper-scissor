@@ -49,3 +49,6 @@ Rock-paper-scissor/
 ---
 
 Enjoy coding and have fun! 🎉
+
+For output: Click the link below:
+https://screenrec.com/share/sCzID7AuhY
