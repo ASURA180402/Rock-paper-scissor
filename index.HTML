@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock-Paper-Scissor</title>
+  <link rel="stylesheet" href="index.CSS">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Outfit:wght@100..900&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_on" />
+  
+</head>
+<body>
+  <img src="rock-paper-scissor.png" alt=""><br>
+  <button onclick="
+    let computerChoice = generateComputerChoice();
+    let resultMsg = getResult('Rock', computerChoice);
+    showResult('Rock', computerChoice, resultMsg);
+    ">Rock
+  </button>
+
+  <button onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Paper', computerChoice);
+    showResult('Paper', computerChoice, resultMsg);
+    ">Paper
+  </button>
+
+  <button onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Scissor', computerChoice);
+    showResult('Scissor', computerChoice, resultMsg);
+    ">Scissor
+  </button>
+
+  <!-- <button class="toggle-theme" onclick="toggleTheme()" >Toggle Theme</button> -->
+  <span class="material-symbols-outlined" onclick="toggleTheme()">toggle_on</span>
+
+
+  <h3 id="User_move"></h3>
+
+  <h3 id="Computer_move"></h3>
+
+  <h3 id="Result"></h3>
+
+  <h3 id="Score"></h3>
+
+  <button onclick="localStorage.clear()
+    resetScore();
+  ">Reset</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
